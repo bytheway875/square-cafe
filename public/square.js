@@ -14,18 +14,13 @@ $(document).ready(function(){
     drink_count += 1;
     total_cost = 0;
     $('select').each(function() {
-
       selection = $(this).find(":selected");
       total_cost = total_cost + Number($(selection).attr('data-price'));
-
     });
 
     $('form').append('<select>' + $('select').first().html() + '</select><br/>');
     $('#drinks').text(drink_count);
-    console.log(total_cost);
-    total_cost = total_cost/100
-    // $("#total_cost").toFixed(2);
-    // $(total_cost).toFixed(2);
-    $('#cost').text("$" +total_cost.toFixed(2));
+    total_cost = total_cost/100;
+    $('#cost').text("$" + total_cost.toFixed(2));
   });
 });
