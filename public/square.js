@@ -18,16 +18,14 @@ $(document).ready(function(){
       selection = $(this).find(":selected");
       total_cost = total_cost + Number($(selection).attr('data-price'));
 
-
-
-      console.log('Selection:' + $(selection).attr('data-price'));
-      console.log('Total_Cost:' + total_cost);
-      console.log(' ');
     });
 
     $('form').append('<select>' + $('select').first().html() + '</select><br/>');
     $('#drinks').text(drink_count);
     console.log(total_cost);
-    $('#cost').text(total_cost);
+    total_cost = total_cost/100
+    // $("#total_cost").toFixed(2);
+    // $(total_cost).toFixed(2);
+    $('#cost').text("$" +total_cost.toFixed(2));
   });
 });
