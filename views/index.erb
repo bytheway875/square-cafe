@@ -8,6 +8,14 @@
     <script src="square.js"></script>
   </head>
   <body>
+    <div class = "newsletter">
+      <h2> Sign up for the Square Cafe Newsletter for news, deals, and more.</h2>
+      <form class ='emailform'>
+        Email: <input id ='email' type ="text" name="email"><br>
+        <input type ="submit" value="Sign Me Up!" class="emailsubmit">
+      </form>
+    </div>
+
     <div id="headmast">
       <h1>Square Cafe</h1>
       <h2>716 Congress, Suite 404, Austin, TX</p>
@@ -21,14 +29,14 @@
 
         <a class="twitter-timeline" href="https://twitter.com/MakerSquareCafe" data-widget-id="353241485782700032">Tweets by @MakerSquareCafe</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
       </div>
       <div class="panel">
         <div id = "orderform">
         <h2>What Would You Like?</h2>
 
 
-        <form>
+        <form class ='takemyorder'>
           <div>
             <!-- See this "drink[]" name? -->
             <!-- This is turned into an array of items -->

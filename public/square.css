@@ -137,3 +137,11 @@ dt {
     */
     opacity: 1;
   }
+
+  .newsletter{
+    background-color: #FFFFFF;
+    margin-left: -200px;
+    left: 50%;
+    width:400px;
+    position:absolute;
+  }
